@@ -35,12 +35,12 @@ public class OrientedTest {
 
 //        重写的hashcode 所以当设置完后 对象的hashcode 就变掉了
 //        lombok data 只是生成了一个空的构造函数
-        Person people = new Person();
+        Person people = new Person("1");
         System.out.println(people.hashCode());
         people.setAge("1");
         System.out.println(" lombok data 重写了 hashcode "+people.hashCode());
 
-        Person people2 = new Person("fengfeng","11");
+        Person people2 = new Person("2");
         System.out.println(people.hashCode());
     }
 
