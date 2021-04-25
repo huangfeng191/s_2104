@@ -20,4 +20,9 @@ public class EnumTest {
         System.out.println(Color.white.getIdx());
         System.out.println(Color.violet.getIdx());
     }
+    @Test
+    public void sizeTest(){
+        Size intermediate = Size.intermediate;
+        System.out.println(intermediate.getMeasure());
+    }
 }
