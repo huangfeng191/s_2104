@@ -1,6 +1,7 @@
 package com.fengfeng.basic.cache.impl;
 
 import com.fengfeng.basic.cache.Cache;
+import com.fengfeng.basic.exception.MyException;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -16,12 +17,12 @@ public class MapCache<K,V> implements Cache<K,V> {
     }
 
     @Override
-    public void put(K key, V value) {
+    public void put (K key, V value)  throws MyException {
         map.put(key,value);
     }
 
     @Override
-    public void remove(K key) {
+    public void remove(K key)throws MyException {
         map.remove(key);
     }
 
@@ -31,13 +32,13 @@ public class MapCache<K,V> implements Cache<K,V> {
     }
 
     @Override
-    public V get(K key) {
+    public V get(K key) throws MyException{
         return map.get(key);
 
     }
 
     @Override
-    public void clear() {
+    public void clear() throws MyException{
         map.clear();
     }
 
