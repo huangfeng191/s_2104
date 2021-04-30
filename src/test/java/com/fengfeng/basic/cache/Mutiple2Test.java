@@ -11,7 +11,7 @@ public class Mutiple2Test {
     @Test
     void test() throws InterruptedException {
         HashMap hashMap = new HashMap();  // 线程不安全
-        MapCache mapCache = new MapCache(hashMap);
+        MapCache mapCache = new MapCache("不安全",hashMap);
         ConsumeCache consumeCache = new ConsumeCache(mapCache);
         ConsumeCache1 consumeCache1 = new ConsumeCache1(mapCache);
         consumeCache.start();
@@ -29,7 +29,7 @@ public class Mutiple2Test {
     @Test
     void test2() throws InterruptedException {
         ConcurrentMap hashMap = new ConcurrentHashMap();  // 线程安全
-        MapCache mapCache = new MapCache(hashMap);
+        MapCache mapCache = new MapCache("安全",hashMap);
         ConsumeCache consumeCache = new ConsumeCache(mapCache);
         ConsumeCache1 consumeCache1 = new ConsumeCache1(mapCache);
         consumeCache.start();
