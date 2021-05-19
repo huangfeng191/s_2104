@@ -15,7 +15,8 @@ public class ThreadClassDemo {
         thread2.setPriority(Thread.MIN_PRIORITY); // 优先级比较低的话 被调用的 可能性 大大减小.
         System.out.println("Starting Goodbye Thread...");
         thread2.start();
-//        GuessNumber guessNumber = new GuessNumber(30);
-//        guessNumber.start();
+        System.out.println("Starting GuessNumber Thread...");
+        GuessNumber thread3 = new GuessNumber(30);
+        thread3.start();
     }
 }
