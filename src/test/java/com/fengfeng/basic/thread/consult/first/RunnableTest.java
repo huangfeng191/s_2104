@@ -1,5 +1,5 @@
 package com.fengfeng.basic.thread.consult.first;
-//https://www.tutorialspoint.com/java/java_multithreading.htm
+
 class RunnableDemo  implements Runnable{
     private Thread t;
     private String threadName;

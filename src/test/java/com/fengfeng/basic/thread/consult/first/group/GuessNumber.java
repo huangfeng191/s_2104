@@ -17,7 +17,7 @@ public class GuessNumber extends Thread {
             counter++;
         }while (guess!=number);
 
-        System.out.println("** Correct!" + this.getName() + "in " + counter + " guesses.**");
+        System.out.println("** Correct!" + this.getName() + " in " + counter + " guesses.**");
 
     }
 }

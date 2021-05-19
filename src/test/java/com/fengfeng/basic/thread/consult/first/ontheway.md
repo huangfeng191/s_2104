@@ -1,3 +1,4 @@
+# https://www.tutorialspoint.com/java/java_multithreading.htm
 # 写一个类 继承 runnable 接口, 但创建的话 还是要用Thread 接口, 所以本质上是一样的,
 # 建议使用 runnable 接口，因为 java 不能多继承 。
 
@@ -11,7 +12,7 @@
 - public final void join(long millisec)
 1. The current thread invokes this method on a second thread,
    causing the current thread to block until the second thread terminates or 
-2. the specified number of milliseconds passes.
+   the specified number of milliseconds passes.
 
 - public void interrupt()
 1. Interrupts this thread, causing it to continue execution if it was blocked for any reason.
