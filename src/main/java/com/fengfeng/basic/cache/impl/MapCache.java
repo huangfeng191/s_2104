@@ -8,21 +8,22 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 
-public class MapCache<K,V> implements Cache<K,V> {
-    private Map<K,V>  map;
+public class MapCache<K, V> implements Cache<K, V> {
+    private Map<K, V> map;
     private final String name; // 一次性，不可更改
-    public MapCache(String name,Map<K, V> map) {
+
+    public MapCache(String name, Map<K, V> map) {
         this.map = map;
-        this.name=name;
+        this.name = name;
     }
 
     @Override
-    public void put (K key, V value)  throws MyException {
-        map.put(key,value);
+    public void put(K key, V value) throws MyException {
+        map.put(key, value);
     }
 
     @Override
-    public void remove(K key)throws MyException {
+    public void remove(K key) throws MyException {
         map.remove(key);
     }
 
@@ -32,16 +33,15 @@ public class MapCache<K,V> implements Cache<K,V> {
     }
 
     @Override
-    public V get(K key) throws MyException{
+    public V get(K key) throws MyException {
         return map.get(key);
 
     }
 
     @Override
-    public void clear() throws MyException{
+    public void clear() throws MyException {
         map.clear();
     }
-
 
 
     public Set<K> keys_test() {
@@ -52,7 +52,7 @@ public class MapCache<K,V> implements Cache<K,V> {
     @Override
     public Set<K> keys() {
         Set<K> ks = map.keySet();
-        if(!ks.isEmpty()){ // 使 key 不可更改
+        if (!ks.isEmpty()) { // 使 key 不可更改
             return Collections.unmodifiableSet(ks);
         }
         return Collections.emptySet();
@@ -68,7 +68,7 @@ public class MapCache<K,V> implements Cache<K,V> {
     @Override
     public Collection<V> values() {
         Collection<V> values = map.values();
-        if(!values.isEmpty()){
+        if (!values.isEmpty()) {
             return Collections.unmodifiableCollection(values);
         }
 //        return null;

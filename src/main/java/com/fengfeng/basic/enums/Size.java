@@ -7,9 +7,10 @@ public enum Size {
     private int measure;
 
     Size(int measure) {
-        this.measure=measure;
+        this.measure = measure;
     }
-    public int getMeasure(){
+
+    public int getMeasure() {
         return measure;
     }
 }

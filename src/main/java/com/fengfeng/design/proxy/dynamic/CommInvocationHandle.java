@@ -11,8 +11,8 @@ public class CommInvocationHandle implements InvocationHandler {
         this.obj = obj;
     }
 
-     public Object getProxy() {
-         return Proxy.newProxyInstance(obj.getClass().getClassLoader(), obj.getClass().getInterfaces(), this);
+    public Object getProxy() {
+        return Proxy.newProxyInstance(obj.getClass().getClassLoader(), obj.getClass().getInterfaces(), this);
     }
 
     @Override
@@ -23,6 +23,6 @@ public class CommInvocationHandle implements InvocationHandler {
     }
 
     public void log(String msg) {
-        System.out.println(msg +" is invoked ");
+        System.out.println(msg + " is invoked ");
     }
 }

@@ -8,8 +8,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class PeopleImpl implements People {
     private String name;
+    protected String privacy;
+    String live;
+
+    public String appearance;
     @Override
     public String cry() {
-        return "haha "+name +" is crying ！！！";
+        return "haha " + name + " is crying ！！！";
     }
 }

@@ -9,14 +9,16 @@ public class Proxy implements Rent {
 
     @Override
     public void rent() {
-     this.host.rent();
-     seeHouse();
-     brokerage();
+        this.host.rent();
+        seeHouse();
+        brokerage();
     }
-    public void seeHouse(){
+
+    public void seeHouse() {
         System.out.println("see the  apartment ");
     }
-    public void brokerage(){
+
+    public void brokerage() {
         System.out.println("give me  money");
     }
 }

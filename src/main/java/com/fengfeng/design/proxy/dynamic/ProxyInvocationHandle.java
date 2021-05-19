@@ -10,9 +10,10 @@ public class ProxyInvocationHandle implements InvocationHandler {
     public void setRent(Rent rent) {
         this.rent = rent;
     }
-    public Object getProxy(){
+
+    public Object getProxy() {
 // 此处获取的是 rent 对象的接口
-       return   Proxy.newProxyInstance(this.getClass().getClassLoader(), rent.getClass().getInterfaces(), this);
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(), rent.getClass().getInterfaces(), this);
 
     }
 
@@ -23,8 +24,9 @@ public class ProxyInvocationHandle implements InvocationHandler {
 
         return result;
     }
-    public void log(String msg){
-        System.out.println(msg +" is been invoked");
+
+    public void log(String msg) {
+        System.out.println(msg + " is been invoked");
 
     }
 }

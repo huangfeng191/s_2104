@@ -9,7 +9,7 @@ import java.util.List;
 public class MapTest {
 
     @Test
-    void test_collect(){
+    void test_collect() {
 //        HashMap -> AbstractMap --> Map
 //        AbstractMap 实现了 部分 map 方法， 特异性的 由具体类实现 ,HashMap
         HashMap hashMap = new HashMap();
@@ -34,7 +34,7 @@ public class MapTest {
 
 
     @Test
-    void test(){
+    void test() {
         HashMap<String, String> stringStringHashMap = new HashMap<String, String>();
         stringStringHashMap.put("a", "aa");
         stringStringHashMap.put("b", "bb");

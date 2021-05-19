@@ -3,7 +3,7 @@ package com.fengfeng.basic.constractorparams;
 import java.beans.ConstructorProperties;
 
 public class Point {
-//    @ConstructorProperties({"x", "y"})
+    //    @ConstructorProperties({"x", "y"})
     public Point(int x, int y) {
         this.x = x;
         this.y = y;

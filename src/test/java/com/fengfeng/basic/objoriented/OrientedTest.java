@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class OrientedTest {
     @Test
-    void testHashCode(){
+    void testHashCode() {
         /**
          *       我们先来看一下Object.hashCode的通用约定（摘自《Effective Java》第45页）
          *     在一个应用程序执行期间，如果一个对象的equals方法做比较所用到的信息没有被修改的话，那么，对该对象调用hashCode方法多次，它必须始终如一地返回 同一个整数。在同一个应用程序的多次执行过程中，这个整数可以不同，即这个应用程序这次执行返回的整数与下一次执行返回的整数可以不一致。
@@ -30,15 +30,16 @@ public class OrientedTest {
         System.out.println(bird.hashCode());
 
     }
+
     @Test
-    void lombokTest(){
+    void lombokTest() {
 
 //        重写的hashcode 所以当设置完后 对象的hashcode 就变掉了
 //        lombok data 只是生成了一个空的构造函数
         Person people = new Person("1");
         System.out.println(people.hashCode());
         people.setAge("1");
-        System.out.println(" lombok data 重写了 hashcode "+people.hashCode());
+        System.out.println(" lombok data 重写了 hashcode " + people.hashCode());
 
         Person people2 = new Person("2");
         System.out.println(people.hashCode());

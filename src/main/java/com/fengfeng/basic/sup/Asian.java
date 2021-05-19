@@ -1,6 +1,6 @@
 package com.fengfeng.basic.sup;
 
-public class Asian extends People{
+public class Asian extends People {
     private String sex;
 
     public Asian(String name, String age, String sex) {
@@ -15,10 +15,12 @@ public class Asian extends People{
     public void setSex(String sex) {
         this.sex = sex;
     }
-    public void setPeopleName(String name){
+
+    public void setPeopleName(String name) {
         super.setName(name);
     }
-    public String getPeopleName(){
+
+    public String getPeopleName() {
         return super.getName();
     }
 
@@ -27,7 +29,7 @@ public class Asian extends People{
         return "Asian{" +
                 "sex='" + sex + '\'' +
                 "name='" + super.getName() + '\'' +
-                "age='" + super.getAge()+ '\'' +
+                "age='" + super.getAge() + '\'' +
                 '}';
     }
 

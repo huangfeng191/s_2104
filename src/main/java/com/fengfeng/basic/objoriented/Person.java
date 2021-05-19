@@ -5,7 +5,8 @@ import lombok.NonNull;
 
 @Data
 public class Person {
-    @NonNull private String name;
+    @NonNull
+    private String name;
     private String age;
 
 }

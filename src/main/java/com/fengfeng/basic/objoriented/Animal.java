@@ -3,8 +3,8 @@ package com.fengfeng.basic.objoriented;
 import java.util.Objects;
 
 public class Animal {
-   private String name;
-   private String age;
+    private String name;
+    private String age;
 
     public String getName() {
         return name;

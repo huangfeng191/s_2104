@@ -4,12 +4,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 public class Main_reflect {
-    public String id ;
+    public String id;
+
     public void fun(String name, int age) {
-        System.out.println("我叫"+name+",今年"+age+"岁");
+        System.out.println("我叫" + name + ",今年" + age + "岁");
     }
 
-//    获取反射属性
+    //    获取反射属性
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchFieldException {
 
         Class class1 = Class.forName("org.fengfeng.Main_reflect");
@@ -28,9 +29,6 @@ public class Main_reflect {
 //        反射方法 ，有点像是 js 的 call 方法， obj.myFun.apply(db);　
 // 拿到方法，再传入对象去调用
         //method.invoke(o1, "tengj", 10);
-
-
-
 
 
     }

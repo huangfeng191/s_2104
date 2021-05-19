@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Test;
 
 public class EnumTest {
     @Test
-    public void getColor(){
+    public void getColor() {
         System.out.println(Color.pink);
     }
+
     @Test
-    public void colorFor(){
+    public void colorFor() {
 //        for (Color color :
 //                Color.values() ) {
 //            System.out.println(color);
@@ -20,8 +21,9 @@ public class EnumTest {
         System.out.println(Color.white.getIdx());
         System.out.println(Color.violet.getIdx());
     }
+
     @Test
-    public void sizeTest(){
+    public void sizeTest() {
         Size intermediate = Size.intermediate;
         System.out.println(intermediate.getMeasure());
     }

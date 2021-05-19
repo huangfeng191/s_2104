@@ -18,6 +18,7 @@ public class ReflectTest {
         System.out.println(name);
         System.out.println("111");
     }
+
     @Test
     void loadProperties2() throws IOException {
 //        未成功   FileInputStream 基础未学好
@@ -37,7 +38,6 @@ public class ReflectTest {
         //第一种：Class c1 = Code.class;
         Class class1 = ReflectTest.class;
         System.out.println(class1.getName());
-
 
 
 //        //第二种：Class c2 = code1.getClass();

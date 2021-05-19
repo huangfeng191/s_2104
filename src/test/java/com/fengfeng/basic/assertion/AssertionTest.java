@@ -6,9 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class AssertionTest {
     @Test
-   void contextLoad(){
+    void contextLoad() {
         double x = Math.abs(-123.45);
         assert x < 0;
         System.out.println(x);
-   }
+    }
 }

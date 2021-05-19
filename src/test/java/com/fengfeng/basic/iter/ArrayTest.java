@@ -10,12 +10,12 @@ import java.util.Iterator;
 //@SpringBootTest
 public class ArrayTest {
     @Test
-    void arrayTest(){
+    void arrayTest() {
         ArrayList arrayList = new ArrayList();
         arrayList.add(1);
         arrayList.add("2asdfad");
         arrayList.add(new Integer("1"));
-        arrayList.forEach((e)->{
+        arrayList.forEach((e) -> {
 // 对每个对象遍历
             System.out.println(e.getClass());
             System.out.println(e);
@@ -24,8 +24,9 @@ public class ArrayTest {
         System.out.println(iterator.getClass());
 
     }
+
     @Test
-    void arrayTest1(){
+    void arrayTest1() {
         ArrayList arrayList = new ArrayList();
         arrayList.add(1);
         arrayList.add("2asdfad");
@@ -35,11 +36,11 @@ public class ArrayTest {
         hashSet.add(2);
         hashSet.add(2);
         hashSet.add("3");
-        for (Object o:arrayList
+        for (Object o : arrayList
         ) {
             System.out.println(o);
         }
-        for (Object o:hashSet
+        for (Object o : hashSet
         ) {
             System.out.println(o);
         }
